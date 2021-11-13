@@ -5,10 +5,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int d2b(){
-    int decimal = 0;
-    printf("Enter a decimal number to convert to binary:");
-    scanf("%d", &decimal);
+int d2b(int decimal){
     int value = 0, count = 0, res = 0;
 	unsigned long num = 0;
 	while(decimal > 0){
