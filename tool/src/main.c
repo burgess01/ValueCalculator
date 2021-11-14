@@ -166,7 +166,7 @@ int main(){
                 num1 = d2b(num1);
                 num2 = d2b(num2);
 
-                res = div(num1, num2);
+                res = divi(num1, num2);
 
                 printf("The answer is: %d", res);
 
