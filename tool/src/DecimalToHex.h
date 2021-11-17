@@ -17,8 +17,10 @@ int d2h(){
     int rem = 0, i = 0;
     while(decimal > 0){
         // store remainder of division
-        rem = decimal % 4;
+        rem = decimal % 16;
+        //printf("%d\n", rem);
         decimal = decimal / 16;
+        //printf("%d\n", decimal);
         // turn values bigger than 10 into letter eq.
         if(rem > 9){
             if(rem == 10){
@@ -43,8 +45,21 @@ int d2h(){
         else{
             hex[i] = rem;
         }
+        //printf("%c",hex[i]);
         i++;
     }
     // reverse values and store in combined return var
+    for(int j = i; j >= 0; j--){
+        //printf("%c\n", hex[j]);
+        if (hex[j] > 0 && hex[j] < 10){
+            printf("%d", hex[j]);
+            //printf("Working");
+        }
+        else{
+            printf("%c", hex[j]);
+        }
+    }
+    printf("\n");
     // return output
+    return 0;
 }

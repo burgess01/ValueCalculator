@@ -5,7 +5,7 @@
 #include "BinaryToDecimal.h"
 //#include "BinaryToHex.h"
 #include "DecimalToBinary.h"
-//#include "DecimalToHex.h"
+#include "DecimalToHex.h"
 #include "HexToBinary.h"
 #include "HexToDecimal.h"
 
@@ -58,9 +58,7 @@ int main(){
                     printf("\n");  
                 }
                 else if (choice2 == 2){ // to hex
-                    //int res = d2h();
-                    //printf("%d\n", res);
-                    //printf("\n");
+                    d2h();
                 }
                 else{
                     break;
@@ -73,9 +71,7 @@ int main(){
                 printf("Enter (1) to convert to binary\nor (2) to convert to decimal:");
                 scanf("%d", &choice2);
                 if (choice2 == 1){ // to bin
-                    unsigned long res = h2b();
-                    printf("%lu\n", res);
-                    printf("\n");  
+                    h2b();
                 }
                 else if(choice2 == 2){ // to dec
                     int res = h2d();
@@ -138,9 +134,9 @@ int main(){
                 unsigned long num2;
                 int res;
                 printf("---------------------------------\n");
-                printf("Enter the first number you want to multiply: ");
+                printf("Enter the first number you want to multiply: (max of 16 bits)");
                 scanf("%lu", &num1);
-                printf("Enter the second number you want to multiply: ");
+                printf("Enter the second number you want to multiply: (max of 16 bits)");
                 scanf("%lu", &num2);
 
                 //change into binary
@@ -157,9 +153,9 @@ int main(){
                 unsigned long num2;
                 int res;
                 printf("---------------------------------\n");
-                printf("Enter the first number you want to divide: ");
+                printf("Enter the first number you want to divide: (max of 16 bits)");
                 scanf("%lu", &num1);
-                printf("Enter the second number you want to divide: ");
+                printf("Enter the second number you want to divide: (max of 16 bits)");
                 scanf("%lu", &num2);
 
                 //change into binary
