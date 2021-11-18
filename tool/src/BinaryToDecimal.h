@@ -4,10 +4,12 @@
 
 #include <math.h>
 
-int b2d(){
-	unsigned long binary = 0;
+int b2d(unsigned long binary){
+	//unsigned long binary = 0;
+	/*
     printf("Enter a binary number to convert to decimal:");
     scanf("%lu", &binary);
+	*/
     int value = 0, res = 0, count = 0;
 	unsigned long r = binary;
 

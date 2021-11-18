@@ -31,7 +31,10 @@ int main(){
                 printf("Enter (1) to convert to decimal or (2) to convert to hexadecimal:");
                 scanf("%d", &choice2);
                 if (choice2 == 1){ // to dec
-                    int res = b2d();
+                    printf("Enter a binary number to convert to decimal:");
+                    unsigned long binary = 0;
+                    scanf("%lu", &binary);
+                    int res = b2d(binary);
                     printf("%d\n", res);
                     printf("\n");
                 }
@@ -108,8 +111,8 @@ int main(){
                 res = add(num1, num2);
 
                 //change from binary
-                //res = b2d(res);
-                printf("The sum is: %d", res);
+                res = b2d(res);
+                printf("The sum is: %d \n", res);
 
             }
             else if(choice2 == 2){ // sub
