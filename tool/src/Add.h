@@ -3,8 +3,6 @@
 // Assuming that the bits is 16 or less
 #define bits 16
 unsigned long add(unsigned long num1, unsigned long num2){
-	/* implement the logic here to develop the + operator */
-	// step 1: convert (num1) and (num2) decimal to binary.
     printf("num1 is: %lu \n", num1);
     printf("num2 is: %lu \n", num2); 
     unsigned long res = 0;
