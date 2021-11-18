@@ -11,11 +11,11 @@ unsigned long add(unsigned long num1, unsigned long num2){
 	int decimal1[bits] = {0,0,0,0,0,0,0,0,0,0,0,0,0};
 	int decimal2[bits] = {0,0,0,0,0,0,0,0,0,0,0,0,0};
 	int output[bits] = {0,0,0,0,0,0,0,0,0,0,0,0,0};
-	int temp = num1;
+	unsigned long temp = num1;
 	int index = bits-1;
 	while(temp > 0){
 		decimal1[index] = temp % 2;
-		temp /= 2;
+		temp /= 10;
 		index--;
 	}
 	for (int i = 0; i < bits; i++){
@@ -26,7 +26,7 @@ unsigned long add(unsigned long num1, unsigned long num2){
 	index = bits-1;
 	while(temp > 0){
 		decimal2[index] = temp % 2;
-		temp /= 2;
+		temp /= 10;
 		index--;
 	}
 	for (int i = 0; i < bits; i++){
