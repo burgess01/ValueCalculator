@@ -131,7 +131,9 @@ int main(){
 
                 res = sub(num1, num2);
 
-                printf("The answer is: %d", res);
+                //change into binary
+                res = b2d(res);
+                printf("The answer is: %d \n", res);
 
             }
             else if(choice2 == 3){ // mul
