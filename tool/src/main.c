@@ -107,6 +107,8 @@ int main(){
 
                 res = add(num1, num2);
 
+                //change from binary
+                //res = b2d(res);
                 printf("The sum is: %d", res);
 
             }
