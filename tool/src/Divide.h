@@ -28,10 +28,16 @@ void divi(int input1, int input2, int arr[]){
     int copy_input1 = input1;
     int copy_input2 = input2;
     int dividend_counter = 0;
+    int divisor_counter = 0;
     while(copy_input1>0){
         copy_input1 = copy_input1/2;
         dividend_counter++;
     }
+    while(copy_input2>0){
+        copy_input2 = copy_input2/2;
+        divisor_counter++;
+    }
+    divisor_counter = divisor_counter + 1;
     int i = dividend_counter-1;
     int *dividend = (int *) malloc(dividend_counter*sizeof(int));
     while(input1>0){
@@ -39,7 +45,6 @@ void divi(int input1, int input2, int arr[]){
         input1 = input1/2;
         i = i-1;
     }
-    int divisor_counter = dividend_counter + 1; //create an extra space in the array
     i = divisor_counter-1;
     int *divisor = (int *) malloc(divisor_counter*sizeof(int));
     int *quotient = (int *) malloc(divisor_counter*sizeof(int));
@@ -82,4 +87,6 @@ void divi(int input1, int input2, int arr[]){
     int d = internalb2d(dividend,dividend_counter);
     arr[0] = d;
     arr[1] = q;
+    printf("d is  %d\n", arr[0]);
+    printf("q is  %d\n", arr[1]);
 }
