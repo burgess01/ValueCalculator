@@ -144,22 +144,34 @@ int main(){
                 scanf("%lu", &num1);
                 printf("Enter the second number you want to multiply: (max of 16 bits)");
                 scanf("%lu", &num2);
+
+                //change into binary
+                num1 = d2b(num1);
+                num2 = d2b(num2);
+
                 res = mul(num1, num2);
-                printf("The product is: %d\n", res);
+
+                printf("The product is: %d", res);
 
             }
             else if(choice2 == 4){ // div
                 unsigned long num1;
                 unsigned long num2;
-                int res[2];
+                int res;
                 printf("---------------------------------\n");
                 printf("Enter the first number you want to divide: (max of 16 bits)");
                 scanf("%lu", &num1);
                 printf("Enter the second number you want to divide: (max of 16 bits)");
                 scanf("%lu", &num2);
-                divi(num1,num2,res);
-                printf("The result is %d ", res[0]);
-                printf("With a remainder of %d\n", res[1]);
+
+                //change into binary
+                num1 = d2b(num1);
+                num2 = d2b(num2);
+
+                res = divi(num1, num2);
+
+                printf("The answer is: %d", res);
+
             }
             else{
                 break;
