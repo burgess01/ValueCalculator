@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 #include "BinaryToDecimal.h"
-//#include "BinaryToHex.h"
+#include "BinaryToHex.h"
 #include "DecimalToBinary.h"
 #include "DecimalToHex.h"
 #include "HexToBinary.h"
@@ -11,7 +11,7 @@
 
 #include "Add.h"
 #include "Subtract.h"
-#include "mul.h"
+#include "Multiply.h"
 #include "Divide.h"
 
 int main(){
@@ -39,9 +39,8 @@ int main(){
                     printf("\n");
                 }
                 else if(choice2 == 2){ // to hex
-                    //int res = b2h();
-                    //printf("%d\n", res);
-                    //printf("\n");
+                    b2h();
+                    printf("\n");
                 }
                 else{
                     break;
