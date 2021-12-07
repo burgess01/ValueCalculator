@@ -22,6 +22,9 @@ int h2b(){
     int binary[len*4];
     // iterate through, turning letter values to numbers
     for(int i = 0; i < len; i++){
+        printf("Hex values are %d\n", hex[i]);
+    }
+    for(int i = 0; i < len; i++){
         if(hex[i] == 'A'){
             decimal[i] = 10;
         }
@@ -41,9 +44,10 @@ int h2b(){
             decimal[i] = 15;
         }
         else{
-            decimal[i] = decimal[i] - 48;
+            decimal[i] = hex[i]-48;
         }
     }
+
     for(int i = 0; i < len; i++){
         printf("Decimal values are %d\n", decimal[i]);
     }
