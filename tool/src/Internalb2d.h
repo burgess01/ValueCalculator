@@ -11,6 +11,5 @@ int internalb2d(int *output, int count){
             sum = (output[i]+sum)*2;
         }
     }
-    printf("The result is %d\n", sum);
     return sum;
 }

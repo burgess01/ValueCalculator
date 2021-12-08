@@ -78,5 +78,5 @@ int h2b(){
     
     printf("The result is %lu\n", result);
     // print out list one by one on same line
-    return 0;
+    return result;
 }
