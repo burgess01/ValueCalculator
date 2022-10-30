@@ -10,4 +10,4 @@ This program is able to compute decimal, hexadecimal, and binary values between 
 
 ## How to get Started with ValueCalculator
 
-Run the command 'python src/main.py'
+Run the command ```python src/main.py``` then navigate through the menus, entering in the requested values.
